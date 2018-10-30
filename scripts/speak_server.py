@@ -9,6 +9,7 @@ import jtalk
 def speaker(req):
     jtalk(req.text)
     resp.success = True
+    resp.message = "Success to speak " + req.text
     return resp
 
 
