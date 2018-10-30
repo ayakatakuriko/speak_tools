@@ -1,4 +1,5 @@
-#coding: utf-8
+#!/usr/bin/env python
+#encoding: utf8
 import subprocess
 
 
@@ -16,3 +17,9 @@ def jtalk(t):
     c.wait()
     aplay = ['aplay', '-q', 'open_jtalk.wav']
     wr = subprocess.Popen(aplay)
+
+
+"""
+Open-jtalkをPythonで使用するための関数
+t - しゃべらせたいテキスト
+"""

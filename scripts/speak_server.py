@@ -22,3 +22,7 @@ def speaker_server():
 
 if __name__ == '__main__':
     speaker_server()
+
+"""
+クライアントからSpeakedTextというサービスをうけとって発話させるROSノード
+"""

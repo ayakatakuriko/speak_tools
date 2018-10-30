@@ -26,3 +26,8 @@ if __name__ == "__main__":
         print "%s" % (speak_client(text))
     else:
         print usage()
+
+"""
+speak_server.pyのテスト用
+コマンドラインから入力したテキストを喋らせる
+"""
