@@ -12,7 +12,7 @@ def jtalk(t):
     htsvoice = [
         '-m', path + 'tohoku-f01-happy.htsvoice']
     #speed = ['-r', '1.0']
-    outwav = ['-ow', path]
+    outwav = ['-ow', path + "open_jtalk.wav"]
     cmd = open_jtalk + mech + htsvoice + outwav
     c = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     c.stdin.write(t)
