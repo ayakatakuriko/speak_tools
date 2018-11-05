@@ -19,7 +19,7 @@ def jtalk(t):
     c.stdin.write(t)
     c.stdin.close()
     c.wait()
-    aplay = ['aplay', '-q', 'open_jtalk.wav']
+    aplay = ['aplay', '-q', path]
     wr = subprocess.Popen(aplay)
 
 
