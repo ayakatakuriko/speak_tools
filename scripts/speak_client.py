@@ -23,7 +23,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
         text = sys.argv[1]
         print"Requesting %s" % text
-        print "%s" % (speak_client("こんにちわ"))
+        print "%s" % (speak_client("こんばんわに"))
     else:
         print usage()
 
