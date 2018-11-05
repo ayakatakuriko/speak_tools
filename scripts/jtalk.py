@@ -5,7 +5,9 @@ import os
 
 
 def jtalk(t):
-    path = os.path.dirname(os.path.realpath(__file__)) + 'scripts/open_jtalk.wav'
+    path = os.path.dirname(os.path.realpath(__file__)) + \
+        'scripts/open_jtalk.wav'
+    print "path"
     open_jtalk = ['open_jtalk']
     mech = ['-x', '/var/lib/mecab/dic/open-jtalk/naist-jdic']
     htsvoice = [
