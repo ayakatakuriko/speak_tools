@@ -9,7 +9,7 @@ def jtalk(t):
     open_jtalk = ['open_jtalk']
     mech = ['-x', '/var/lib/mecab/dic/open-jtalk/naist-jdic']
     htsvoice = [
-        '-m', '/usr/share/hts-voice/miku/miku.htsvoice']
+        '-m', path + 'scripts/Voice.htsvoice']
     speed = ['-r', '1.0']
     outwav = ['-ow', path]
     cmd = open_jtalk + mech + htsvoice + speed + outwav
