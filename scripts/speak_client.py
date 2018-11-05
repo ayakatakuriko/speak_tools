@@ -16,18 +16,17 @@ def speak_client(text):
 
 
 def usage():
-    return "%s <name>" % sys.argv[0]
+    return "%s <text>" % sys.argv[0]
 
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
         text = sys.argv[1]
         print"Requesting %s" % text
-        print "%s" % (speak_client(text))
+        print "%s" % (speak_client("こんにちわ"))
     else:
         print usage()
 
 """
 speak_server.pyのテスト用
-コマンドラインから入力したテキストを喋らせる
 """

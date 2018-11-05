@@ -1,3 +1,4 @@
-string message
+string text
 ---
+string message
 bool success
