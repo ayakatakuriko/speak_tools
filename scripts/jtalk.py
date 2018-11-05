@@ -7,7 +7,7 @@ def jtalk(t):
     open_jtalk = ['open_jtalk']
     mech = ['-x', '/var/lib/mecab/dic/open-jtalk/naist-jdic']
     htsvoice = [
-        '-m', '/usr/share/hts-voice/nitech-jp-atr503-m001/nitech_jp_atr503_m001.htsvoice']
+        '-m', '/usr/share/hts-voice/miku/miku.htsvoice']
     speed = ['-r', '1.0']
     outwav = ['-ow', 'open_jtalk.wav']
     cmd = open_jtalk + mech + htsvoice + speed + outwav
