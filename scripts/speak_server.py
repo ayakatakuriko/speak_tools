@@ -3,11 +3,12 @@
 import subprocess
 import rospy
 from speak_tools.srv import *
-import jtalk
+from jtalk import jtalk
 
 
 def speaker(req):
     jtalk(req.text)
+    resp = SpeakedTextResponse()
     resp.success = True
     resp.message = "Success to speak " + req.text
     return resp

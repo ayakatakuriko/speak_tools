@@ -16,7 +16,7 @@ def speak_client(text):
 
 
 def usage():
-    return "%s <name>" % sys.argv[0]
+    return "%s <text>" % sys.argv[0]
 
 
 if __name__ == "__main__":
