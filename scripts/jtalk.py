@@ -10,8 +10,8 @@ def jtalk(t):
     open_jtalk = ['open_jtalk']
     mech = ['-x', '/var/lib/mecab/dic/open-jtalk/naist-jdic']
     htsvoice = [
-        '-m', path + 'tohoku-f01-happy.htsvoice']
-    #speed = ['-r', '1.0']
+        '-m', path + 'Voice.htsvoice']
+    speed = ['-r', '1.0']
     outwav = ['-ow', path + "open_jtalk.wav"]
     cmd = open_jtalk + mech + htsvoice + outwav
     c = subprocess.Popen(cmd, stdin=subprocess.PIPE)
